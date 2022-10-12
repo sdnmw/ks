@@ -122,11 +122,11 @@ spec:
       replicas: 2
       # resources: {}
   metrics_server:                    # (CPU: 56 m, Memory: 44.35 MiB) It enables HPA (Horizontal Pod Autoscaler).
-    enabled: false                  # Enable or disable metrics-server.
+    enabled: true                 # Enable or disable metrics-server.
   monitoring:
     storageClass: ""                 # If there is an independent StorageClass you need for Prometheus, you can specify it here. The default StorageClass is used by default.
     node_exporter:
-      port: 9100
+      port: 9111
       # resources: {}
     # kube_rbac_proxy:
     #   resources: {}
