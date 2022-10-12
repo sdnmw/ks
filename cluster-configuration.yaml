@@ -8,7 +8,7 @@ metadata:
     version: v3.3.0-alpha.0
 spec:
   persistence:
-    storageClass: "alicloud-disk-ssd"        # If there is no default StorageClass in your cluster, you need to specify an existing StorageClass here.
+    storageClass: "alicloud-disk-essd"        # If there is no default StorageClass in your cluster, you need to specify an existing StorageClass here.
   authentication:
     jwtSecret: ""           # Keep the jwtSecret consistent with the Host Cluster. Retrieve the jwtSecret by executing "kubectl -n kubesphere-system get cm kubesphere-config -o yaml | grep -v "apiVersion" | grep jwtSecret" on the Host Cluster.
   local_registry: ""        # Add your private registry address if it is needed.
